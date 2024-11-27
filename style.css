@@ -1,0 +1,314 @@
+ /* Google Fonts */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+ *{
+/*****SIDE BAR******/
+
+    margin: 0;
+     padding: 0;
+     border: none;
+     outline: none;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+ body {
+    display:flex;
+ }
+ .sidebar {
+    display: sticky;
+ }
+ .sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 115px;
+    height: 100vh; 
+    padding: 0 1.7rem;
+    color: #337ab7;
+    overflow: hidden;
+    transition: all 0.5s liner;
+    background: #94a3ab;
+ }
+ .sidebar:hover {
+    width: 240px;
+    transition: 0.5s;
+ }
+ .logo {
+    height: 80px;
+    padding: 16px;
+ }
+ .menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+ }
+ .menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+ }
+ .menu li:hover,
+ .active {
+    background: #e0e0e058;
+ }
+ .menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+ }
+ .menu a span{
+    overflow: hidden;
+ }
+ .menu a i {
+    font-size: 1.2rem;
+ }
+ .logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+ }
+
+ .user--info a {
+   color: rgba(113, 99, 186, 255);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+ }
+
+ /******* MAIN BODY SECTION ************/
+ .main--content {
+    position: relative;
+    background: #94a3ab;
+    width: 100%;
+    padding: 1rem;
+ }
+ .header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+ }  
+ .header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem; 
+ }
+ .header--title {
+    color: #337ab7;
+ }
+ .user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+ }
+
+ /**** functions container ****/
+ .main--functions{
+   background: #fff;
+   border-radius: 10px;
+   padding: 10px 2rem;
+   margin-bottom: 1rem;
+ }
+
+ .functions--wrapper {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    padding-bottom: 50px;
+    margin-bottom: 5rem;
+ }
+
+ /*display adjustments for Daily Bus Usage index.php*/
+ .row {
+   display: flex; 
+   flex-direction: row;          
+   flex-wrap: wrap;        
+   gap: 50px;         
+   align-items: flex-end;     
+}
+
+.row {
+   display: flex;
+   flex-direction: row;  
+   gap: 50px;            
+   align-items: flex-end;  background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    padding-bottom: 50px;
+    margin-bottom: 5rem;
+}
+
+
+
+/*****/
+
+.form-row {
+   display: flex;
+   flex-direction: row;  
+   gap: 50px;            
+   align-items: flex-end; 
+}
+
+
+.form-group {
+   flex: 1;  
+   min-width: 150px; 
+}
+
+
+.submit-button {
+   flex: 0 0 auto; 
+  ;
+}
+
+#submit {
+   background-color: #28a745; 
+   color: white;              
+   border: none;              
+   padding: 10px 20px;        
+   border-radius: 5px;        
+   cursor: pointer;           
+   outline: none;             
+   text-decoration: none;     
+}
+
+
+#submit:hover {
+   background-color: #218838; /* Darker green on hover */
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px; 
+}
+
+
+
+ /**** tabular section ****/
+ 
+ .tabular--wrapper {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+ }
+
+ .table-container {
+    width: 100%;
+ }
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+ thread {
+    background: rgba(113, 99, 186, 255);
+    color: #fff;
+ }
+
+ th {
+    padding: 15px;
+    text-align: left;
+ }
+
+ tbody {
+    background: #f2f2f2;
+ 
+}
+
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
+
+tfoot {
+    background: rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #fff;   
+}
+
+tfoot td {
+    padding: 15px;
+}
+.table-container button {
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+
+/* Apply border-radius to the table */
+table {
+   border-collapse: separate; /* Ensure border-radius works */
+   border-radius: 5px;        /* Apply 5px rounded corners */
+   border: 1px solid #ddd;    /* Optional: Add a border */
+   overflow: hidden;          /* Ensure rounded corners are visible */
+}
+
+/*******REGISTRATION FORM FORMATTING*************/
+/*body {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   background-color: #6b5c87;
+   color: #f5f6f7;
+   font-family: Tahoma;
+   font-size: 16px;
+ }*/
+ 
+ h1, p {
+   margin: 0.5em auto;
+ }
+ 
+ fieldset {
+   border: none;
+   padding: 2rem 0;
+ }
+ 
+ form {
+   width: 60vw;
+   max-width: 500px;
+   min-width: 300px;
+   margin: 0 auto;
+   padding-bottom: 2em;
+ }
+ 
+ label {
+   display: block;
+   margin: 0.5rem 0;
+ }
+ 
+ input,
+ textarea,
+ select {
+   margin: 10px 0 10 -10;
+   width: 100%;
+   min-height: 2em;
+ }
+ .inline {
+   width: unset;
+   margin: 0 0.5em 0 0;
+   vertical-align: middle;
+ }
